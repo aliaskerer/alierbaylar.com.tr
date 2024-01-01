@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Asker</title>   
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="body"> 
+
+    <header class="main-header">
+        <div id="main-nav" class="container">
+            <a href="#" class="main-header__logo">Anasayfa</a>
+            <nav class="main-nav">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item">
+                        <a href="#why-us">Hakkımızda</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#w-plans">Planlar</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--login">
+                        <a class="btn btn-primary" href="register.html">Giriş</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" onclick="displayMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <main>
+        <section id="showcase">
+            <div class="content">
+                <h2>Hoşgeldin</h2>
+                <h4>Güzel bir vucudum olsun ama ne yapacagımı bilmiyorum mu diyorsun o zaman doğru adresdesin
+                </h4>
+            </div>
+        </section>
+        <section id="why-us">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title">Peki Neden Biz</h2>
+                    <p>Çünkü 20 yıllık tecrübemiz ile seni en iyi haline getirmek için programlar hazırlıyoruz</p>
+                </div>
+            </div>
+        </section>
+        <section id="hakkımda">
+            <div class="row">
+                <div class="col-2 features__left"></div>
+                <div class="col-2 features__right">
+                    <h5>ben kimim</h5>
+                    <h3>Ali Asker</h3>
+                    <p>14 yaşında çelimsiz görüntümü değiştirmek için başladığım bu süreç, her geçen yıl gelişmenin verdiği özgüven ve görünümle hayatımdaki en büyük tutkum oldu.  Tutkuya dönüşmesiyle beraber Elektronik Mühendisliği okuduğum yıllarda kendimi güncel, bilime dayalı kaynak ve kanallardan eğittim. Son sınıf öğrencisi olduğumda alt yapımın verdiği özgüven ve vücut geliştirme tutkum neticesinde insanlara yardım etmeye ve aynı zamanda sosyal medyaya içerik üreticiliğine başladım.
+
+                        2021 Yılında Türkiye Genç Erkek  Klasik Fizik kategorisinde şampiyon olup, bir atlet olarak kariyerimi başlattım ve yurt dışından profesyonel koçlar ile çalışmaya başladım.
+                        
+                        Aldığım ve almakta olduğum eğitim ve hizmetleri en iyi şekilde yorumlayıp, yüzlerce kişiye istekleri ve ihtiyaçlarını doğrultusunda aktardım. Hala da aktarmaya devam ediyorum. Bir atlet ve antrenör olarak uzun yıllar buradayım.</p>
+                </div>
+            </div>
+        </section>
+        <section id="w-plans">
+            <h2 class="section-title">Planlar</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 card-container">
+                            <div class="card">
+                                <img class="card-image img-fluid" src="img/1.webp" alt="">
+                                <div class="card-body">
+                                    <h2>Split</h2>
+                                    <ul>
+                                        <li>Kişiye özel program</li>
+                                        <li>Kişiye özel suplament</li>
+                                        <li>kişiye özel beslenme programı</li>
+                                     </ul>
+                                    <p>
+                                        <button class="btn btn-primary">Kayıt ol</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 card-container">
+                            <div class="card ">
+                                <img class="card-image img-fluid" src="img/1.webp" alt="">
+                                <div class="card-body">
+                                    <h2>PPL</h2>
+                                    <ul>
+                                        <li>Kişiye özel program</li>
+                                        <li>Kişiye özel suplament</li>
+                                        <li>kişiye özel beslenme programı</li>
+                                     </ul>
+                                    <p>
+                                        <button class="btn btn-primary">Kayıt ol</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 card-container">
+                            <div class="card ">
+                                <img class="card-image img-fluid" src="img/1.webp" alt="">
+                                <div class="card-body">
+                                    <h2>Full Body</h2>
+                                    <ul>
+                                        <li>Kişiye özel program</li>
+                                        <li>Kişiye özel suplament</li>
+                                        <li>kişiye özel beslenme programı</li>
+                                     </ul>
+                                    <p>
+                                        <button class="btn btn-primary">Kayıt ol</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <ul id="footer-links">
+                        <li><a href="#hk">Hakkımıda</a></li>
+                        <li><a href="#pl">Planlar</a></li>
+                        <li><a href="#ıl">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function displayMenu() {
+            var link = document.getElementById("main-nav");
+            link.classList.toggle("responsive");
+        }
+    </script>
+
+</body>
+</html>
